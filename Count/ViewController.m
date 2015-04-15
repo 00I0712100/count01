@@ -14,6 +14,47 @@
 
 @implementation ViewController
 
+-(IBAction)plus{
+    number=number+1;
+    label.text=[NSString stringWithFormat:@"%d",number];
+    if(number>=1217){
+        label.textColor=[UIColor colorWithRed:255/255.0 green:211/255.0 blue:217/255.0 alpha:0.75 ];
+    }else if(number<=-1217){
+        label.textColor=[UIColor colorWithRed:255/255.0 green:211/255.0 blue:217/255.0 alpha:0.75 ];
+    }else{
+        label.textColor=[UIColor colorWithRed:255/255.0 green:185/255.0 blue:207/255.0 alpha:0.82 ];
+        
+    }
+  
+}
+
+-(IBAction)minus{
+    number=number-1;
+    label.text=[NSString stringWithFormat:@"%d",number];
+    if(number>=1217){
+        label.textColor=[UIColor colorWithRed:255/255.0 green:211/255.0 blue:217/255.0 alpha:0.75 ];
+    }else if(number<=-1217){
+        label.textColor=[UIColor colorWithRed:255/255.0 green:211/255.0 blue:217/255.0 alpha:0.75 ];
+    }else{
+        label.textColor=[UIColor colorWithRed:255/255.0 green:185/255.0 blue:207/255.0 alpha:0.82 ];
+        
+    }
+}
+
+-(IBAction)clear{
+    number=0;
+    label.text=[NSString stringWithFormat:@"%d",number];
+    if(number>=1217){
+        label.textColor=[UIColor colorWithRed:255/255.0 green:211/255.0 blue:217/255.0 alpha:0.75 ];
+    }else if(number<=-1217){
+        label.textColor=[UIColor colorWithRed:255/255.0 green:211/255.0 blue:217/255.0 alpha:0.75 ];
+    }else{
+        label.textColor=[UIColor colorWithRed:255/255.0 green:185/255.0 blue:207/255.0 alpha:0.82 ];
+        
+    }
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

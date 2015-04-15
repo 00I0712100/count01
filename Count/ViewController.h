@@ -10,4 +10,14 @@
 
 @interface ViewController : UIViewController
 
+{
+    int number;
+    IBOutlet UILabel *label;
+    
+}
+
+-(IBAction)plus;
+-(IBAction)minus;
+-(IBAction)clear;
+
 @end
